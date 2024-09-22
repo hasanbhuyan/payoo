@@ -51,7 +51,12 @@
             const phoneNumber = document.getElementById('phone-number').value;
             const pinNumber = document.getElementById('pin-number').value;
 
-            console.log(phoneNumber,'and', pinNumber)
+            if(phoneNumber === '01401993683' && pinNumber === '1419'){
+                window.location.href = '/home-page.html';
+            }
+            else{
+                alert('wrong phone number or pin number')
+            }
             
         })
     </script>
